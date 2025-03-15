@@ -169,10 +169,20 @@ class CustomMission: MissionServer
 		
 		player.GetInventory().CreateInInventory("Ushanka_Black");
 		player.GetInventory().CreateInInventory("CombatBoots_Black");
+		player.GetInventory().CreateInInventory("WorkingGloves_Black");
 		player.GetInventory().CreateInInventory("CargoPants_Black");
 		player.GetInventory().CreateInInventory("ServerWiki_Jacke");
 		player.GetInventory().CreateInInventory("Battery9V");
 		player.GetInventory().CreateInInventory("Battery9V");
+		player.GetInventory().CreateInInventory("SodaCan_Pipsi");
+		player.GetInventory().CreateInInventory("SpaghettiCan");
+		player.GetInventory().CreateInInventory("TacticalBaconCan_Opened");
+		player.GetInventory().CreateInInventory("HuntingKnife");
+		player.GetInventory().CreateInInventory("OrienteeringCompass");
+		player.GetInventory().CreateInInventory("TacticalBaconCan_Opened");
+		player.GetInventory().CreateInInventory("TetracyclineAntibiotics");
+		player.GetInventory().CreateInInventory("AntiChemInjector");
+		player.GetInventory().CreateInInventory("BandageDressing");
 		ItemBase rags = player.GetInventory().CreateInInventory("Rag");
 		rags.SetQuantity(4);
 

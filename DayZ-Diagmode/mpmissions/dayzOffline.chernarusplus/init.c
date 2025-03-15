@@ -5,6 +5,11 @@ void main()
 	if ( ce )
 		ce.InitOffline();
 
+
+	// comment/remove the following 2 lines when not exporting (can cause further issues if you do this each time you start a mission!)
+	// GetCEApi().ExportProxyData("7680 0 7680", 12000);	// standard map groups (buildings) export, terrain center and radius needs to be specified
+	// GetCEApi().ExportClusterData();						// cluster-type map groups export (fruit trees etc.)
+
 	//DATE RESET AFTER ECONOMY INIT-------------------------
 	int year, month, day, hour, minute;
 	int reset_month = 9, reset_day = 20;
@@ -153,10 +158,20 @@ class CustomMission: MissionServer
 		
 		player.GetInventory().CreateInInventory("Ushanka_Black");
 		player.GetInventory().CreateInInventory("CombatBoots_Black");
+		player.GetInventory().CreateInInventory("WorkingGloves_Black");
 		player.GetInventory().CreateInInventory("CargoPants_Black");
 		player.GetInventory().CreateInInventory("ServerWiki_Jacke");
 		player.GetInventory().CreateInInventory("Battery9V");
 		player.GetInventory().CreateInInventory("Battery9V");
+		player.GetInventory().CreateInInventory("SodaCan_Pipsi");
+		player.GetInventory().CreateInInventory("SpaghettiCan");
+		player.GetInventory().CreateInInventory("TacticalBaconCan_Opened");
+		player.GetInventory().CreateInInventory("HuntingKnife");
+		player.GetInventory().CreateInInventory("OrienteeringCompass");
+		player.GetInventory().CreateInInventory("TacticalBaconCan_Opened");
+		player.GetInventory().CreateInInventory("TetracyclineAntibiotics");
+		player.GetInventory().CreateInInventory("AntiChemInjector");
+		player.GetInventory().CreateInInventory("BandageDressing");
 		ItemBase rags = player.GetInventory().CreateInInventory("Rag");
 		rags.SetQuantity(4);
 

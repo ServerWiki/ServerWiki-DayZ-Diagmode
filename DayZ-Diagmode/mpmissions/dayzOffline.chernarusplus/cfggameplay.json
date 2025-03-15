@@ -69,6 +69,7 @@
 			"disableHeightPlacementCheck": false,
 			"disableIsUnderwaterCheck": false,
 			"disableIsInTerrainCheck": false,
+			"disableColdAreaBuildingCheck": false,
 			"disallowedTypesInUnderground": ["FenceKit","TerritoryFlagKit","WatchtowerKit"]
 		},
 		"ConstructionData":
@@ -99,5 +100,9 @@
 		"ignoreNavItemsOwnership": false,
 		"displayPlayerPosition": false,
 		"displayNavInfo": true
+	},
+	"VehicleData":
+	{
+		"boatDecayMultiplier": 1
 	}
 }

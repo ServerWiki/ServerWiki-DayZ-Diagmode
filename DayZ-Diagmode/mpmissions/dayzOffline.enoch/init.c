@@ -7,7 +7,7 @@ void main()
 
 	//DATE RESET AFTER ECONOMY INIT-------------------------
 	int year, month, day, hour, minute;
-	int reset_month = 8, reset_day = 10;
+	int reset_month = 7, reset_day = 17;
 	GetGame().GetWorld().GetDate(year, month, day, hour, minute);
 
 	if ((month == reset_month) && (day < reset_day))
@@ -66,11 +66,21 @@ void main()
 //			
 //			itemEnt = itemClothing.GetInventory().CreateInInventory( "BandageDressing" );
 //			player.SetQuickBarEntityShortcut(itemEnt, 2);
-//
+//			
 //			string chemlightArray[] = { "Chemlight_White", "Chemlight_Yellow", "Chemlight_Green", "Chemlight_Red" };
 //			int rndIndex = Math.RandomInt( 0, 4 );
 //			itemEnt = itemClothing.GetInventory().CreateInInventory( chemlightArray[rndIndex] );
+//			SetRandomHealth( itemEnt );
 //			player.SetQuickBarEntityShortcut(itemEnt, 1);
+//
+//			rand = Math.RandomFloatInclusive( 0.0, 1.0 );
+//			if ( rand < 0.35 )
+//				itemEnt = player.GetInventory().CreateInInventory( "Apple" );
+//			else if ( rand > 0.65 )
+//				itemEnt = player.GetInventory().CreateInInventory( "Pear" );
+//			else
+//				itemEnt = player.GetInventory().CreateInInventory( "Plum" );
+//			player.SetQuickBarEntityShortcut(itemEnt, 3);
 //			SetRandomHealth( itemEnt );
 //		}
 //		
@@ -143,10 +153,20 @@ class CustomMission: MissionServer
 		
 		player.GetInventory().CreateInInventory("Ushanka_Black");
 		player.GetInventory().CreateInInventory("CombatBoots_Black");
+		player.GetInventory().CreateInInventory("WorkingGloves_Black");
 		player.GetInventory().CreateInInventory("CargoPants_Black");
 		player.GetInventory().CreateInInventory("ServerWiki_Jacke");
 		player.GetInventory().CreateInInventory("Battery9V");
 		player.GetInventory().CreateInInventory("Battery9V");
+		player.GetInventory().CreateInInventory("SodaCan_Pipsi");
+		player.GetInventory().CreateInInventory("SpaghettiCan");
+		player.GetInventory().CreateInInventory("TacticalBaconCan_Opened");
+		player.GetInventory().CreateInInventory("HuntingKnife");
+		player.GetInventory().CreateInInventory("OrienteeringCompass");
+		player.GetInventory().CreateInInventory("TacticalBaconCan_Opened");
+		player.GetInventory().CreateInInventory("TetracyclineAntibiotics");
+		player.GetInventory().CreateInInventory("AntiChemInjector");
+		player.GetInventory().CreateInInventory("BandageDressing");
 		ItemBase rags = player.GetInventory().CreateInInventory("Rag");
 		rags.SetQuantity(4);
 
